@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Murach's Java Servlets and JSP</title>
+	<link rel="stylesheet" href="assets/css/weak4.css" type="text/css">
+</head>
+
+<body>
+	<header>
+		<img src="assets/img/logoMurach.png" alt="Murach Logo" width="200px">
+		<h1>Survey</h1>
+		<p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+	</header>
+
+	<section>
+		<form action="surveyList" method="post">
+			<input type="hidden" name="action" value="submit">
+			
+			<h2>Your Information</h2>
+			<label class="info-user">Fisrt Name</label>
+			<input type="text" name="firstName" required><br>
+
+			<label class="info-user">Last Name</label>
+			<input type="text" name="lastName" required><br>
+
+			<label class="info-user">Email</label>
+			<input type="email" name="email" required><br>
+			
+			<label class="info-user">Date of Birth</label>
+			<input type="text" name="dOB" required><br>
+			
+			<h2>How did you hear about us?</h2>
+
+			<input type="radio" name="hear" value="Search engine" required>
+			<label>Search engine</label>
+
+			<input type="radio" name="hear" value="Word of mouth">
+			<label>Word of mouth</label>
+			
+			<input type="radio" name="hear" value="Social Media">
+			<label>Social Media</label>
+
+			<input type="radio" name="hear" value="Other">
+			<label>Other</label>
+
+			<h2>Would you like to receive announcements about new CDs and special offers?</h2>
+
+			<input type="checkbox" name="checkBoxLike">
+			<label>YES, I'd like that.</label><br><br>
+			
+			<input type="checkbox" name="checkBoxSend">
+			<label>YES, please send me email announcements.</label>
+			<br>
+			<br>
+			
+			<label>Please contact me by:</label>
+			<select name="contact">
+				<option value="Email or postal mail" selected>Email or postal mail</option>
+				<option vlaue="Email only">Email only</option>
+				<option value="Postal mail only">Postal mail only</option>
+			</select>
+			<br>
+			<br>
+			<input type="submit" value="Submit" id="submit">
+		</form>
+		<br>
+		<button><a href="index.html">Back Home</a></button>
+	</section>
+</body>
+
+</html>
