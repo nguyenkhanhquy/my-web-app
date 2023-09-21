@@ -30,7 +30,8 @@ br {
 	clear: both;
 }
 
-#submit {
+.btn {
+	cursor: pointer;
 	min-width: 8em;
 	height: 3em;
 }

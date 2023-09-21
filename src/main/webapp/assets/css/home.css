@@ -40,6 +40,11 @@ a {
 }
 
 .weak-btn {
+	border-radius: 8px;
 	margin: 0px;
 	padding: 0px;
+}
+
+.weak-btn:hover {
+	background-color: #ccc;
 }
