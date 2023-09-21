@@ -10,7 +10,7 @@ body {
 
 .logo {
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
 }
 
 .section-exercise {
@@ -33,12 +33,13 @@ h2 {
 }
 
 a {
+	display: block;
+	padding: 12px;
 	color: #000;
 	text-decoration: none;
 }
 
 .weak-btn {
-	padding: 12px 20px;
-	margin-right: 4px;
-	margin-left: 4px;
+	margin: 0px;
+	padding: 0px;
 }
