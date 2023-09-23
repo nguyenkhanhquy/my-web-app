@@ -1,4 +1,4 @@
-package controllers;
+package controllers.w4;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import models.User;
+import models.w4.User;
 
 @WebServlet(urlPatterns = {"/surveyList"})
 public class SurveyListServlet extends HttpServlet {
@@ -56,7 +56,7 @@ public class SurveyListServlet extends HttpServlet {
 			
 			req.setAttribute("user", user);
 			
-			url = "/thanks.jsp";
+			url = "/thanks_w4.jsp";
 		}
 		
 		getServletContext().getRequestDispatcher(url).forward(req, resp);

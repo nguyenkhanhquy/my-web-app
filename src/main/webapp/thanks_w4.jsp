@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Murach's Java Servlets and JSP</title>

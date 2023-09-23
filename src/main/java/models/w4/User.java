@@ -1,4 +1,4 @@
-package models;
+package models.w4;
 
 import java.io.Serializable;
 
