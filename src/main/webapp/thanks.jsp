@@ -52,7 +52,7 @@
 		<p>To fill out another survey, click the Back button browser or Back button shown below.</p>
 		<form action="" method="get">
 			<input type="hidden" name="action" value="back"> 
-			<input type="submit" value="Back" id="submit">
+			<input class="btn" type="submit" value="Back">
 		</form>
 	</section>
 </body>

@@ -34,15 +34,15 @@ h2 {
 
 a {
 	display: block;
-	padding: 12px;
 	color: #000;
 	text-decoration: none;
 }
 
 .weak-btn {
+	cursor: pointer;
 	border-radius: 8px;
-	margin: 0px;
-	padding: 0px;
+	min-width: 80px;
+	height: 40px;
 }
 
 .weak-btn:hover {

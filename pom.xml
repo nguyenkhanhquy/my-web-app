@@ -30,7 +30,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>GateWay</finalName>
+		<finalName>MyWebApp</finalName>
 
 		<plugins>
 			<plugin>
