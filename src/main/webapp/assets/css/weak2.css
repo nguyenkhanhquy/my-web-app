@@ -8,8 +8,7 @@ body {
 	background-color: #eee;
 }
 
-h1,
-h2 {
+h1 {
 	color: teal;
 }
 
@@ -40,4 +39,34 @@ br {
 a {
 	color: #000;
 	text-decoration: none;
+}
+
+/*Moblie*/
+@media only screen and (max-width: 47.99375em) {
+
+	body {
+		font-size: 10pt;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 16pt;
+	}
+
+	.nbsp {
+		display: none;
+	}
+
+	.btn {
+		margin-left: 0px;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		width: 95%;
+		margin-bottom: 1.5em;
+		margin-left: 0em;
+		font-size: 16pt;
+		border-radius: 6px;
+	}
 }

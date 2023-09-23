@@ -8,7 +8,7 @@ body {
 	background-color: #eee;
 }
 
-.logo {
+.header {
 	display: flex;
 	justify-content: space-between;
 }
@@ -21,6 +21,7 @@ body {
 
 .section-exercise-btn {
 	display: flex;
+	margin-bottom: 10px;
 }
 
 .section-info {
@@ -29,16 +30,26 @@ body {
 	align-items: center;
 }
 
+.img-avatar {
+	width: 232px;
+	border-radius: 12px
+}
+
 h1,
 h2 {
 	color: teal;
+}
+
+.course-name {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 a {
 	display: block;
 	color: #000;
 	text-decoration: none;
-	margin-right: 8px;
+	margin: 0px 8px;
 }
 
 .weak-btn {
@@ -50,4 +61,75 @@ a {
 
 .weak-btn:hover {
 	background-color: #ccc;
+}
+
+/*footer*/
+.footer {
+	display: flex;
+	justify-content: center;
+	min-height: 100px;
+}
+
+.social-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	padding: 0px;
+}
+
+.social-icon__item {
+	list-style: none;
+}
+
+.social-icon__link {
+	transition: 0.5s;
+}
+
+.social-icon__link:hover {
+	transform: translateY(-10px);
+}
+
+.footer img {
+	width: 40px;
+}
+
+/*Ipad*/
+@media only screen and (min-width: 48em) and (max-width: 63.99375em) {
+
+	.section-info {
+		display: grid;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.img-avatar {
+		border-radius: 12px
+	}
+}
+
+/*Moblie*/
+@media only screen and (max-width: 47.99375em) {
+
+	body {
+		font-size: 10pt;
+	}
+
+	.header {
+		display: none;
+	}
+
+	.course-name {
+		font-size: 19pt;
+	}
+
+	.section-info {
+		display: grid;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.img-avatar {
+		width: 200px;
+	}
 }
