@@ -73,6 +73,10 @@ a {
 	background-color: #dc3545;
 }
 
+.ability-card:hover .card-week {
+	background-color: teal;
+}
+
 .card-week {
 	display: flex;
 	background-color: #0d8fdb;
@@ -125,7 +129,7 @@ a {
 }
 
 /*Pc*/
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 66em) {
 	.marquee {
 		display: none;
 	}
@@ -136,7 +140,6 @@ a {
 	}
 
 	.card::after {
-		content: "Không có bài tập";
 		display: block;
 		position: absolute;
 		z-index: -1;
@@ -150,25 +153,48 @@ a {
 		color: #fff;
 		font-size: 15px;
 	}
+	
+	.empty-card::after {
+		content: "Không có bài tập";
+	}
+	
+	.ability-card.week2-card::after {
+		content: "Email List Servlet";
+	}
+	
+	.ability-card.week4-card::after {
+		content: "Survey List Servlet";
+	}
+	
+	.ability-card.week5-card::after {
+		content: "Profile Page";
+	}
 
-	.empty-card:hover .card-week {
+	.card:hover .card-week {
 		border-top-right-radius: 0px;
 		border-top-left-radius: 0px;
 	}
 
-	.empty-card:hover::after {
+	.card:hover::after {
 		transform: translateY(-26px);
-		background-color: #dc3545;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 	}
+	
+	.empty-card:hover::after {
+		background-color: #dc3545;
+	}
+	
+	.ability-card:hover::after {
+		background-color: teal;
+	}
 
-	.empty-card::after {
+	.card::after {
 		transition: 0.5s;
 	}
 }
 
 /*Ipad*/
-@media only screen and (min-width: 48em) and (max-width: 63.99375em) {
+@media only screen and (min-width: 48em) and (max-width: 65.99375em) {
 
 	.marquee {
 		display: none;
