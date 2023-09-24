@@ -39,12 +39,8 @@ body {
 	border-radius: 12px;
 }
 
-h1,
-h2 {
-	color: teal;
-}
-
 .course-name {
+	color: teal;
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
@@ -130,14 +126,20 @@ a {
 
 /*Pc*/
 @media only screen and (min-width: 64em) {
+	.marquee {
+		display: none;
+	}
+
 	.card {
 		position: relative;
+		z-index: 0;
 	}
 
 	.card::after {
 		content: "Không có bài tập";
 		display: block;
 		position: absolute;
+		z-index: -1;
 		bottom: calc(100% - 26px);
 		min-width: 160px;
 		box-sizing: border-box;
@@ -145,7 +147,7 @@ a {
 		border-top-left-radius: 8px;
 		border-top-right-radius: 8px;
 		background-color: #0d8fdb;
-		color: #0d8fdb;
+		color: #fff;
 		font-size: 15px;
 	}
 
@@ -155,7 +157,6 @@ a {
 	}
 
 	.empty-card:hover::after {
-		color: #fff;
 		transform: translateY(-26px);
 		background-color: #dc3545;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -169,6 +170,10 @@ a {
 /*Ipad*/
 @media only screen and (min-width: 48em) and (max-width: 63.99375em) {
 
+	.marquee {
+		display: none;
+	}
+
 	.section-info {
 		display: grid;
 		justify-content: center;
@@ -181,6 +186,12 @@ a {
 
 /*Moblie*/
 @media only screen and (max-width: 47.99375em) {
+
+	.marquee {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16pt;
+		color: teal;
+	}
 
 	body {
 		font-size: 10pt;
