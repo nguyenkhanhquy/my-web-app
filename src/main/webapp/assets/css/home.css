@@ -58,9 +58,10 @@ a {
 
 .card {
 	box-sizing: border-box;
-	border-radius: 8px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 	transition: 0.5s;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
 }
 
 .card:hover {
@@ -72,9 +73,15 @@ a {
 	font-size: 22pt;
 }
 
+.empty-card:hover .card-week {
+	background-color: #dc3545;
+}
+
 .card-week {
 	display: flex;
 	background-color: #0d8fdb;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
 	height: 160px;
 	min-width: 160px;
 	align-items: center;
@@ -88,17 +95,6 @@ a {
 	height: 60px;
 	align-items: center;
 	justify-content: center;
-}
-
-.week-btn {
-	cursor: pointer;
-	border-radius: 8px;
-	min-width: 80px;
-	height: 40px;
-}
-
-.week-btn:hover {
-	background-color: #ccc;
 }
 
 /*footer*/
@@ -132,12 +128,54 @@ a {
 	width: 40px;
 }
 
+/*Pc*/
+@media only screen and (min-width: 64em) {
+	.card {
+		position: relative;
+	}
+
+	.card::after {
+		content: "Không có bài tập";
+		display: block;
+		position: absolute;
+		bottom: calc(100% - 26px);
+		min-width: 160px;
+		box-sizing: border-box;
+		padding: 4px 6px;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		background-color: #0d8fdb;
+		color: #0d8fdb;
+		font-size: 15px;
+	}
+
+	.empty-card:hover .card-week {
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+	}
+
+	.empty-card:hover::after {
+		color: #fff;
+		transform: translateY(-26px);
+		background-color: #dc3545;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.empty-card::after {
+		transition: 0.5s;
+	}
+}
+
 /*Ipad*/
 @media only screen and (min-width: 48em) and (max-width: 63.99375em) {
 
 	.section-info {
 		display: grid;
 		justify-content: center;
+	}
+
+	.card-week {
+		font-size: 20pt !important;
 	}
 }
 
@@ -164,13 +202,13 @@ a {
 	.img-avatar {
 		width: 200px;
 	}
-	
+
 	.card-week {
 		height: 60px;
 		min-width: 200px;
 		font-size: 16pt !important;
 	}
-	
+
 	.card-desc {
 		height: 40px;
 	}
