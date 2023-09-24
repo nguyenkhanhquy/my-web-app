@@ -20,7 +20,7 @@ public class EmailListServlet extends HttpServlet {
 	    resp.setCharacterEncoding("UTF-8");
 	    resp.setContentType("text/html; charset=UTF-8");
 	    
-		String url = "/weak2.html";
+		String url = "/week2.html";
 
 		// get current action
 		String action = req.getParameter("action");
@@ -31,7 +31,7 @@ public class EmailListServlet extends HttpServlet {
 
 		// perform action and set URL to appropriate page
 		if (action.equals("join")) {
-			url = "/weak2.html"; // the "join" page
+			url = "/week2.html"; // the "join" page
 		} else if (action.equals("add")) {
 			// get parameters from the request
 			String firstName = req.getParameter("firstName");

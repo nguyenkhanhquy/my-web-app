@@ -21,7 +21,6 @@ label {
 input[type="text"],
 input[type="email"] {
 	width: 20em;
-	margin-left: 0.5em;
 	margin-bottom: 0.5em;
 }
 
@@ -30,7 +29,6 @@ br {
 }
 
 .btn {
-	margin-left: 0.5em;
 	cursor: pointer;
 	min-width: 8em;
 	height: 3em;

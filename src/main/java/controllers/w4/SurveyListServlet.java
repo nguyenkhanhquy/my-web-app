@@ -20,7 +20,7 @@ public class SurveyListServlet extends HttpServlet {
 	    resp.setCharacterEncoding("UTF-8");
 	    resp.setContentType("text/html; charset=UTF-8");
 		
-		String url = "/weak4.html";
+		String url = "/week4.html";
 		
 		String action = req.getParameter("action");
 		
@@ -29,7 +29,7 @@ public class SurveyListServlet extends HttpServlet {
 		}
 			
 		if (action.equals("back")) {
-			url = "/weak4.html";
+			url = "/week4.html";
 		} else if (action.equals("submit")) {
 			String firstName = req.getParameter("firstName");
 			String lastName = req.getParameter("lastName");

@@ -15,6 +15,29 @@ body {
 	background-color: #eee;
 }
 
+.course-name {
+	color: teal;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 24pt;
+}
+
+.section-main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.student {
+	min-width: 236px;
+}
+
+.teacher {
+	min-width: 236px;
+}
+
 .section-exercise {
 	display: flex;
 	flex-direction: column;
@@ -25,24 +48,12 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-
-.section-info {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
+	max-width: 528px;
 }
 
 .img-avatar {
 	width: 236px;
 	border-radius: 12px;
-}
-
-.course-name {
-	color: teal;
-	margin-top: 10px;
-	margin-bottom: 20px;
 }
 
 a {
@@ -129,9 +140,13 @@ a {
 }
 
 /*Pc*/
-@media only screen and (min-width: 66em) {
+@media only screen and (min-width: 64em) {
 	.marquee {
 		display: none;
+	}
+	
+	.section-exercise-btn a {
+		margin: 16px 8px;
 	}
 
 	.card {
@@ -169,6 +184,10 @@ a {
 	.ability-card.week5-card::after {
 		content: "Profile Page";
 	}
+	
+	.ability-card.week6-card::after {
+		content: "Coming Soon";
+	}
 
 	.card:hover .card-week {
 		border-top-right-radius: 0px;
@@ -176,7 +195,7 @@ a {
 	}
 
 	.card:hover::after {
-		transform: translateY(-26px);
+		transform: translateY(-24px);
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 	}
 	
@@ -194,13 +213,13 @@ a {
 }
 
 /*Ipad*/
-@media only screen and (min-width: 48em) and (max-width: 65.99375em) {
+@media only screen and (min-width: 48em) and (max-width: 63.99375em) {
 
 	.marquee {
 		display: none;
 	}
 
-	.section-info {
+	.section-main {
 		display: grid;
 		justify-content: center;
 	}
@@ -228,10 +247,10 @@ a {
 	}
 
 	.course-name {
-		font-size: 19pt;
+		font-size: 18pt;
 	}
 
-	.section-info {
+	.section-main {
 		display: grid;
 		justify-content: center;
 	}

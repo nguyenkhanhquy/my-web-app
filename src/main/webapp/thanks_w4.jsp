@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Murach's Java Servlets and JSP</title>
-	<link rel="stylesheet" href="assets/css/weak4.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/week4.css" type="text/css">
 </head>
 <body>
 	<header>
