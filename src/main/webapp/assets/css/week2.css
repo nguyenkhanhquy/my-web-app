@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	margin-left: 2em;
+	margin-right: 2em;
+	background-color: #eee;
+}
+
+h1 {
+	color: teal;
+}
+
+label {
+	float: left;
+	width: 6em;
+	margin-bottom: 0.5em;
+}
+
+input[type="text"],
+input[type="email"] {
+	width: 20em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+br {
+	clear: both;
+}
+
+.btn {
+	margin-left: 0.5em;
+	cursor: pointer;
+	min-width: 8em;
+	height: 3em;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+/*Moblie*/
+@media only screen and (max-width: 47.99375em) {
+
+	body {
+		font-size: 10pt;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 16pt;
+	}
+
+	.nbsp {
+		display: none;
+	}
+
+	.btn {
+		margin-left: 0px;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		width: 95%;
+		margin-bottom: 1.5em;
+		margin-left: 0em;
+		font-size: 16pt;
+		border-radius: 6px;
+	}
+}
