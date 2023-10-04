@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = { "/week6" })
-public class Week6Servlet extends HttpServlet {
+@WebServlet(urlPatterns = { "/ch05ex1" })
+public class Ch05ex1Servlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
@@ -20,7 +20,7 @@ public class Week6Servlet extends HttpServlet {
 		// Forward tới trang /WEB-INF/views/homeView.jsp
 		// (Người dùng không bao giờ truy cập trực tiếp được vào các trang JSP đặt trong
 		// WEB-INF)
-		RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/views/week6View.jsp");
+		RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/views/ch05ex1View.jsp");
 
 		dispatcher.forward(req, resp);
 	}

@@ -1,6 +1,8 @@
 package codes.id21110282.mywebapp.servlet;
 
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -20,7 +22,14 @@ public class EmailListServlet extends HttpServlet {
 		resp.setCharacterEncoding("UTF-8");
 		resp.setContentType("text/html; charset=UTF-8");
 
-		String url = "/WEB-INF/views/week6View.jsp";
+		String myExercise = req.getParameter("myExercise");
+
+		String url = "/WEB-INF/views/" + myExercise + ".jsp";
+
+		// initialize the current year that's used in the copyright notice
+		GregorianCalendar currentDate = new GregorianCalendar();
+		int currentYear = currentDate.get(Calendar.YEAR);
+		req.setAttribute("currentYear", currentYear);
 
 		// get current action
 		String action = req.getParameter("action");
@@ -36,7 +45,7 @@ public class EmailListServlet extends HttpServlet {
 
 		// perform action and set URL to appropriate page
 		if (action.equals("join")) {
-			url = "/WEB-INF/views/week6View.jsp"; // the "join" page
+			url = "/WEB-INF/views/" + myExercise + ".jsp"; // the "join" page
 		} else if (action.equals("add")) {
 			// get parameters from the request
 			String firstName = req.getParameter("firstName");
@@ -51,20 +60,20 @@ public class EmailListServlet extends HttpServlet {
 			if (firstName == null || lastName == null || email == null || firstName.isEmpty() || lastName.isEmpty()
 					|| email.isEmpty()) {
 				message = "Please fill out all three text boxes.";
-				url = "/WEB-INF/views/week6View.jsp";
+				url = "/WEB-INF/views/"  + myExercise + ".jsp";
 			} else {
 				message = "";
-				url = "/WEB-INF/views/thanks_w6View.jsp";
+				url = "/WEB-INF/views/thanks_"  + myExercise + ".jsp";
 			}
 			req.setAttribute("user", user);
 			req.setAttribute("message", message);
 		}
 		getServletContext().getRequestDispatcher(url).forward(req, resp);
 	}
-	
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
+
 		doPost(req, resp);
 	}
 }

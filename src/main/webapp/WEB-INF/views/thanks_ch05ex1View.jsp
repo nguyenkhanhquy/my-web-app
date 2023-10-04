@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Thanks Page</title>
-	<link rel="stylesheet" href="resources/css/week6.css" type="text/css"/>   
+	<link rel="stylesheet" href="resources/css/ch05.css" type="text/css"/>   
 </head>
 <body>
 	<h1>Thanks for joining our email list</h1>
@@ -25,6 +25,7 @@
 
     <form action="" method="post">
         <input type="hidden" name="action" value="join">
+        <input type="hidden" name="myExercise" value="ch05ex1View">  
         <input type="submit" value="Return">
     </form>
 </body>

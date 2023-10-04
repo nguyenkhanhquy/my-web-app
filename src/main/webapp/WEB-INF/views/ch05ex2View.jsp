@@ -5,15 +5,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Week 6 Page</title>
-	<link rel="stylesheet" href="resources/css/week6.css" type="text/css"/>
+	<title>Exercise 5.2 Page</title>
+	<link rel="stylesheet" href="resources/css/ch05.css" type="text/css"/>
 </head>
 <body>
 	<h1>Join our email list</h1>
     <p>To join our email list, enter your name and
        email address below.</p>
-    <p><i>${message}</i></p>
-    <form action="emailList" method="post">
+    <p class="mess"><i>${message}</i></p>
+    <form action="test" method="post">
         <input type="hidden" name="action" value="add">        
         <label class="pad_top">Email:</label>
         <input type="email" name="email" value="${user.email}"><br>

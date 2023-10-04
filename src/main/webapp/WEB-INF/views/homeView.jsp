@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="resources/css/home.css" type="text/css">
 </head>
 <body>
-	<jsp:include page="_header.jsp"></jsp:include>
+	<jsp:include page="includes/_header.jsp"></jsp:include>
 	<hr>
 	<section>
 		<h1 class="course-name">LẬP TRÌNH WEB</h1>
@@ -22,23 +22,63 @@
 			</div>
 			<div class="section-exercise">
 				<div class="section-exercise-btn">
-					<a href="week4">
-						<div class="card ability-card week4-card">
-							<div class="card-week">
-								<strong>Tuần 4</strong>
+					<a href="ch04ex1">
+						<div class="card ability-card">
+							<div class="card-exercise">
+								<strong>Exercise 4.1</strong>
 							</div>
 							<div class="card-desc">
-								<span>HTML5 and CSS3</span>
+								<span>Survey</span>
 							</div>
 						</div>
 					</a>
-					<a href="week6">
-						<div class="card ability-card week6-card">
-							<div class="card-week">
-								<strong>Tuần 6</strong>
+					<a href="ch05ex1">
+						<div class="card ability-card">
+							<div class="card-exercise">
+								<strong>Exercise 5.1</strong>
 							</div>
 							<div class="card-desc">
-								<span>JSP</span>
+								<span>Email List</span>
+							</div>
+						</div>
+					</a>
+					<a href="ch05ex2">
+						<div class="card ability-card">
+							<div class="card-exercise">
+								<strong>Exercise 5.2</strong>
+							</div>
+							<div class="card-desc">
+								<span>Email List</span>
+							</div>
+						</div>
+					</a>
+					<a href="ch06ex1">
+						<div class="card ability-card">
+							<div class="card-exercise">
+								<strong>Exercise 6.1</strong>
+							</div>
+							<div class="card-desc">
+								<span>Email List</span>
+							</div>
+						</div>
+					</a>
+					<a href="ch06ex2">
+						<div class="card ability-card">
+							<div class="card-exercise">
+								<strong>Exercise 6.2</strong>
+							</div>
+							<div class="card-desc">
+								<span>Survey</span>
+							</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="card empty-card">
+							<div class="card-exercise">
+								<strong>Exercise 8.1</strong>
+							</div>
+							<div class="card-desc">
+								<span>...</span>
 							</div>
 						</div>
 					</a>
@@ -53,6 +93,6 @@
 		</div>
 	</section>
 	<hr>
-	<jsp:include page="_footer.jsp"></jsp:include>
+	<jsp:include page="includes/_footer.jsp"></jsp:include>
 </body>
 </html>

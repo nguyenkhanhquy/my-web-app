@@ -5,43 +5,43 @@ import java.io.Serializable;
 public class User implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	private String firstName;
 	private String lastName;
 	private String email;
 	private String dOB;
-	private String hear;
+	private String heardFrom;
 	private String checkBoxLike;
 	private String checkBoxSend;
-	private String contact;
+	private String contactVia;
 
 	public User() {
 		firstName = "";
 		lastName = "";
 		email = "";
 		dOB = "";
-		hear = "";
+		heardFrom = "";
 		checkBoxLike = "";
 		checkBoxSend = "";
-		contact = "";
+		contactVia = "";
 	}
-	
-	public User(String firstName, String lastName, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-    }
 
-	public User(String firstName, String lastName, String email, String dOB, String hear, String checkBoxLike,
-			String checkBoxSend, String contact) {
+	public User(String firstName, String lastName, String email) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
+
+	public User(String firstName, String lastName, String email, String dOB, String heardFrom, String checkBoxLike,
+			String checkBoxSend, String contactVia) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.dOB = dOB;
-		this.hear = hear;
+		this.heardFrom = heardFrom;
 		this.checkBoxLike = checkBoxLike;
 		this.checkBoxSend = checkBoxSend;
-		this.contact = contact;
+		this.contactVia = contactVia;
 	}
 
 	public String getFirstName() {
@@ -76,12 +76,12 @@ public class User implements Serializable {
 		this.dOB = dOB;
 	}
 
-	public String getHear() {
-		return hear;
+	public String getHeardFrom() {
+		return heardFrom;
 	}
 
-	public void setHear(String hear) {
-		this.hear = hear;
+	public void setHeardFrom(String heardFrom) {
+		this.heardFrom = heardFrom;
 	}
 
 	public String getCheckBoxLike() {
@@ -100,11 +100,11 @@ public class User implements Serializable {
 		this.checkBoxSend = checkBoxSend;
 	}
 
-	public String getContact() {
-		return contact;
+	public String getContactVia() {
+		return contactVia;
 	}
 
-	public void setContact(String contact) {
-		this.contact = contact;
+	public void setContactVia(String contactVia) {
+		this.contactVia = contactVia;
 	}
 }

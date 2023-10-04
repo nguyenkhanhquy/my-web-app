@@ -20,12 +20,6 @@ h2 {
 	font-weight: bold;
 }
 
-.question {
-	float: left;
-	margin-bottom: 0.5em;
-	font-weight: bold;
-}
-
 input[type="text"],
 input[type="email"],
 input[type="date"] {

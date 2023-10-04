@@ -1,9 +1,9 @@
 <%@page contentType="text/html" pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Murach's Java Servlets and JSP</title>
+    <title>404 Error Page</title>
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
 </head>
 <body>

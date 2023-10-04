@@ -51,3 +51,14 @@ br {
 .margin_left {
 	margin-left: 0.5em;
 }
+
+.mess {
+	color: red;
+}
+
+.btn {
+	cursor: pointer;
+	min-width: 8em;
+	height: 3em;
+}
+
