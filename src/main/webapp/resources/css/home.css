@@ -169,24 +169,12 @@ a {
 		font-size: 15px;
 	}
 	
-	.empty-card::after {
-		content: "Không có bài tập";
-	}
-	
-	.ability-card.week2-card::after {
-		content: "Email List Servlet";
-	}
-	
 	.ability-card.week4-card::after {
 		content: "Survey List Servlet";
 	}
 	
-	.ability-card.week5-card::after {
-		content: "Profile Page";
-	}
-	
 	.ability-card.week6-card::after {
-		content: "Coming Soon";
+		content: "Exercise 5-1";
 	}
 
 	.card:hover .card-week {
@@ -197,10 +185,6 @@ a {
 	.card:hover::after {
 		transform: translateY(-24px);
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-	}
-	
-	.empty-card:hover::after {
-		background-color: #dc3545;
 	}
 	
 	.ability-card:hover::after {

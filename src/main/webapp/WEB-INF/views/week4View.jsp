@@ -1,15 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
-	<title>Murach's Java Servlets and JSP</title>
-	<link rel="stylesheet" href="assets/css/week4.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Week 4 Page</title>
+	<link rel="stylesheet" href="resources/css/week4.css" type="text/css">
 </head>
-
 <body>
 	<header>
-		<img src="assets/img/logoMurach.png" alt="Murach Logo" width="200px">
+		<img src="resources/img/logoMurach.png" alt="Murach Logo" width="160px">
 		<h1>Survey</h1>
 		<p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
 	</header>
@@ -58,15 +59,14 @@
 			<label>Please contact me by:</label>
 			<select name="contact">
 				<option value="Email or postal mail" selected>Email or postal mail</option>
-				<option vlaue="Email only">Email only</option>
+				<option value="Email only">Email only</option>
 				<option value="Postal mail only">Postal mail only</option>
 			</select>
 			<br>
 			<br>
 			<input class="btn" type="submit" value="Submit">
-			<a href="index.html"><button class="btn" type="button">Back Home</button></a>
+			<a href="home"><button class="btn" type="button">Back Home</button></a>
 		</form>
 	</section>
 </body>
-
 </html>

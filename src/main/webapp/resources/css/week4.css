@@ -2,7 +2,7 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12pt;
+	font-size: 85%;
 	margin-left: 2em;
 	margin-right: 2em;
 	background-color: #eee;
@@ -15,14 +15,26 @@ h2 {
 
 .info-user {
 	float: left;
-	width: 6em;
+	width: 7em;
 	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+.question {
+	float: left;
+	margin-bottom: 0.5em;
+	font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="date"] {
 	width: 15em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+span {
 	margin-left: 0.5em;
 	margin-bottom: 0.5em;
 }
@@ -35,9 +47,4 @@ br {
 	cursor: pointer;
 	min-width: 8em;
 	height: 3em;
-}
-
-a {
-	color: #000;
-	text-decoration: none;
 }

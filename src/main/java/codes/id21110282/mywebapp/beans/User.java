@@ -1,9 +1,11 @@
-package models.w4;
+package codes.id21110282.mywebapp.beans;
 
 import java.io.Serializable;
 
 public class User implements Serializable {
 
+	private static final long serialVersionUID = 1L;
+	
 	private String firstName;
 	private String lastName;
 	private String email;
@@ -12,7 +14,7 @@ public class User implements Serializable {
 	private String checkBoxLike;
 	private String checkBoxSend;
 	private String contact;
-	
+
 	public User() {
 		firstName = "";
 		lastName = "";
@@ -23,6 +25,12 @@ public class User implements Serializable {
 		checkBoxSend = "";
 		contact = "";
 	}
+	
+	public User(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
 
 	public User(String firstName, String lastName, String email, String dOB, String hear, String checkBoxLike,
 			String checkBoxSend, String contact) {

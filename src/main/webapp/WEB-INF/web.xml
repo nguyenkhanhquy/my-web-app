@@ -4,7 +4,40 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
 	id="WebApp_ID" version="4.0">
 	<display-name>MyWebApp</display-name>
+
+	<context-param>
+		<param-name>custServEmail</param-name>
+		<param-value>custserv@murach.com</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>EmailListServlet</servlet-name>
+		<servlet-class>codes.id21110282.mywebapp.servlet.EmailListServlet</servlet-class>
+		<init-param>
+			<param-name>relativePathToFile</param-name>
+			<param-value>/WEB-INF/EmailList.txt</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EmailListServlet</servlet-name>
+		<url-pattern>/emailList</url-pattern>
+	</servlet-mapping>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/views/error_404.jsp</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/WEB-INF/views/error_java.jsp</location>
+	</error-page>
+
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+
 	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
+		<welcome-file>home</welcome-file>
 	</welcome-file-list>
 </web-app>

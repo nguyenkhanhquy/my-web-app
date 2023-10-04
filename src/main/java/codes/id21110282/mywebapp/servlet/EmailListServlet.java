@@ -1,53 +1,64 @@
-package controllers.w2;
+package codes.id21110282.mywebapp.servlet;
 
 import java.io.IOException;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import models.w2.User;
+import codes.id21110282.mywebapp.beans.User;
 
-@WebServlet(urlPatterns = { "/emailList" })
 public class EmailListServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 1L;
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		req.setCharacterEncoding("UTF-8");
-	    resp.setCharacterEncoding("UTF-8");
-	    resp.setContentType("text/html; charset=UTF-8");
-	    
-		String url = "/week2.html";
+		resp.setCharacterEncoding("UTF-8");
+		resp.setContentType("text/html; charset=UTF-8");
+
+		String url = "/WEB-INF/views/week6View.jsp";
 
 		// get current action
 		String action = req.getParameter("action");
 
+		// print action value to console AND log file
+		System.out.println("EmailListServlet action: " + action);
+		log("action=" + action);
+
+		// set default action
 		if (action == null) {
 			action = "join"; // default action
 		}
 
 		// perform action and set URL to appropriate page
 		if (action.equals("join")) {
-			url = "/week2.html"; // the "join" page
+			url = "/WEB-INF/views/week6View.jsp"; // the "join" page
 		} else if (action.equals("add")) {
 			// get parameters from the request
 			String firstName = req.getParameter("firstName");
 			String lastName = req.getParameter("lastName");
 			String email = req.getParameter("email");
-			
+
 			// store data in User object
 			User user = new User(firstName, lastName, email);
-			
-			// set User object in request object and set URL
+
+			// validate the parameters
+			String message;
+			if (firstName == null || lastName == null || email == null || firstName.isEmpty() || lastName.isEmpty()
+					|| email.isEmpty()) {
+				message = "Please fill out all three text boxes.";
+				url = "/WEB-INF/views/week6View.jsp";
+			} else {
+				message = "";
+				url = "/WEB-INF/views/thanks_w6View.jsp";
+			}
 			req.setAttribute("user", user);
-			
-			url = "/thanks_w2.jsp";
+			req.setAttribute("message", message);
 		}
-		
-		// forward request and response objects to specified URL
 		getServletContext().getRequestDispatcher(url).forward(req, resp);
 	}
 	
