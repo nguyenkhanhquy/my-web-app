@@ -1,4 +1,4 @@
-package codes.id21110282.mywebapp.beans;
+package codes.id21110282.mywebapp.bean;
 
 import java.io.Serializable;
 

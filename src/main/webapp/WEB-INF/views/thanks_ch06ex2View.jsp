@@ -21,6 +21,8 @@
     <span>${user.lastName}</span><br>
     <label>Heard From:</label>
     <span>${user.heardFrom}</span><br>
+    <label>Like that:</label>
+    <span>${user.checkBoxLike}</span><br>
     <label>Updates:</label>
     <span>${user.checkBoxSend}</span><br>
 

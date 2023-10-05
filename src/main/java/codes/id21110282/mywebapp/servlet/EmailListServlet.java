@@ -5,12 +5,16 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import codes.id21110282.mywebapp.beans.User;
+import codes.id21110282.mywebapp.bean.User;
 
+@WebServlet(name = "EmailListServlet", urlPatterns = { "/emailList" }, initParams = {
+		@WebInitParam(name = "relativePathToFile", value = "/WEB-INF/EmailList.txt") })
 public class EmailListServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
@@ -60,10 +64,10 @@ public class EmailListServlet extends HttpServlet {
 			if (firstName == null || lastName == null || email == null || firstName.isEmpty() || lastName.isEmpty()
 					|| email.isEmpty()) {
 				message = "Please fill out all three text boxes.";
-				url = "/WEB-INF/views/"  + myExercise + ".jsp";
+				url = "/WEB-INF/views/" + myExercise + ".jsp";
 			} else {
 				message = "";
-				url = "/WEB-INF/views/thanks_"  + myExercise + ".jsp";
+				url = "/WEB-INF/views/thanks_" + myExercise + ".jsp";
 			}
 			req.setAttribute("user", user);
 			req.setAttribute("message", message);

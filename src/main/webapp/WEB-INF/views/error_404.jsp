@@ -13,7 +13,7 @@
 	<p>The server was not able to find the file you requested.</p>
 	<p>To continue, click the Back button.</p>
 	
-	<img src="resources/img/error_404.svg" alt="Error 404">
+	<!-- <img src="resources/img/error_404.svg" alt="Error 404"> -->
 
 </body>
 </html>

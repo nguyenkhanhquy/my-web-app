@@ -10,20 +10,6 @@
 		<param-value>custserv@murach.com</param-value>
 	</context-param>
 
-	<servlet>
-		<servlet-name>EmailListServlet</servlet-name>
-		<servlet-class>codes.id21110282.mywebapp.servlet.EmailListServlet</servlet-class>
-		<init-param>
-			<param-name>relativePathToFile</param-name>
-			<param-value>/WEB-INF/EmailList.txt</param-value>
-		</init-param>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>EmailListServlet</servlet-name>
-		<url-pattern>/emailList</url-pattern>
-	</servlet-mapping>
-
 	<error-page>
 		<error-code>404</error-code>
 		<location>/WEB-INF/views/error_404.jsp</location>

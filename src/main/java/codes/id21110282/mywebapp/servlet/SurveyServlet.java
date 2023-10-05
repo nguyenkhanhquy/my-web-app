@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import codes.id21110282.mywebapp.beans.User;
+import codes.id21110282.mywebapp.bean.User;
 
 @WebServlet(urlPatterns = { "/survey" })
 public class SurveyServlet extends HttpServlet {

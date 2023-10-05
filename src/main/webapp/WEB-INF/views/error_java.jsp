@@ -17,7 +17,7 @@
 	<p>Type: ${pageContext.exception["class"]}</p>
 	<p>Message: ${pageContext.exception.message}</p>
 	
-	<img src="resources/img/error_java.svg" alt="Error Java">
+	<!-- <img src="resources/img/error_java.svg" alt="Error Java"> -->
 
 </body>
 </html>

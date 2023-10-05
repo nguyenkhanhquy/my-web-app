@@ -5,5 +5,5 @@
 		<img src="resources/img/logoSPKT.png" alt="Logo SPKT">
 		<img src="resources/img/logoFIT.png" alt="Logo FIT" style="width: 160px;">
 	</div>
-	<marquee class="marquee"><strong>Đại Học Sư Phạm Kỹ Thuật TP.HCM</strong></marquee>
+	<marquee class="marquee"><strong>Trường Đại Học Sư Phạm Kỹ Thuật TP.HCM</strong></marquee>
 </header>

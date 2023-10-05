@@ -22,53 +22,96 @@
 			</div>
 			<div class="section-exercise">
 				<div class="section-exercise-btn">
-					<a href="ch04ex1">
+					<!-- <a href="ch04ex1">
 						<div class="card ability-card">
 							<div class="card-exercise">
 								<strong>Exercise 4.1</strong>
 							</div>
 							<div class="card-desc">
-								<span>Survey</span>
+								<span>Chương 4</span>
 							</div>
 						</div>
-					</a>
-					<a href="ch05ex1">
+					</a> -->
+					<!-- <a href="ch05ex1">
 						<div class="card ability-card">
 							<div class="card-exercise">
 								<strong>Exercise 5.1</strong>
 							</div>
 							<div class="card-desc">
-								<span>Email List</span>
+								<span>Chương 5</span>
 							</div>
 						</div>
-					</a>
+					</a> -->
 					<a href="ch05ex2">
 						<div class="card ability-card">
 							<div class="card-exercise">
 								<strong>Exercise 5.2</strong>
 							</div>
 							<div class="card-desc">
-								<span>Email List</span>
+								<span>Chương 5</span>
 							</div>
 						</div>
 					</a>
-					<a href="ch06ex1">
+					<!-- <a href="ch06ex1">
 						<div class="card ability-card">
 							<div class="card-exercise">
 								<strong>Exercise 6.1</strong>
 							</div>
 							<div class="card-desc">
-								<span>Email List</span>
+								<span>Chương 6</span>
+							</div>
+						</div>
+					</a> -->
+					<a href="ch06ex1">
+						<div class="card ability-card">
+							<div class="card-exercise">
+								<strong style="margin-bottom: 8px;">Exercise</strong>
+								<strong>5.1 + 6.1</strong>
+							</div>
+							<div class="card-desc">
+								<span>Chương 5 + 6</span>
 							</div>
 						</div>
 					</a>
-					<a href="ch06ex2">
+					<!-- <a href="ch06ex2">
 						<div class="card ability-card">
 							<div class="card-exercise">
 								<strong>Exercise 6.2</strong>
 							</div>
 							<div class="card-desc">
-								<span>Survey</span>
+								<span>Chương 6</span>
+							</div>
+						</div>
+					</a> -->
+					<a href="ch06ex2">
+						<div class="card ability-card">
+							<div class="card-exercise">
+								<strong style="margin-bottom: 8px;">Exercise</strong>
+								<strong>4.1 + 6.2</strong>
+							</div>
+							<div class="card-desc">
+								<span>Chương 4 + 6</span>
+							</div>
+						</div>
+					</a>
+					<a href="ch07ex1_2">
+						<div class="card ability-card">
+							<div class="card-exercise">
+								<strong style="margin-bottom: 8px;">Exercise</strong>
+								<strong>7.1 + 7.2</strong>
+							</div>
+							<div class="card-desc">
+								<span>Chương 7</span>
+							</div>
+						</div>
+					</a>
+					<a>
+						<div class="card empty-card">
+							<div class="card-exercise">
+								<strong>Exercise 7.3</strong>
+							</div>
+							<div class="card-desc">
+								<span>Chương 7</span>
 							</div>
 						</div>
 					</a>
@@ -78,7 +121,27 @@
 								<strong>Exercise 8.1</strong>
 							</div>
 							<div class="card-desc">
-								<span>...</span>
+								<span>Chương 8</span>
+							</div>
+						</div>
+					</a>
+					<a>
+						<div class="card empty-card">
+							<div class="card-exercise">
+								<strong>Exercise 9.1</strong>
+							</div>
+							<div class="card-desc">
+								<span>Chương 9</span>
+							</div>
+						</div>
+					</a>
+					<a>
+						<div class="card empty-card">
+							<div class="card-exercise">
+								<strong>Exercise 9.2</strong>
+							</div>
+							<div class="card-desc">
+								<span>Chương 9</span>
 							</div>
 						</div>
 					</a>
