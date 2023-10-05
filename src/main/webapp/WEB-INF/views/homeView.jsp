@@ -72,7 +72,7 @@
 							</div>
 						</div>
 					</a>
-					<a href="">
+					<a>
 						<div class="card empty-card">
 							<div class="card-exercise">
 								<strong>Exercise 8.1</strong>
@@ -94,5 +94,6 @@
 	</section>
 	<hr>
 	<jsp:include page="includes/_footer.jsp"></jsp:include>
+	
 </body>
 </html>
