@@ -28,7 +28,7 @@
 								<strong>Exercise 5.2</strong>
 							</div>
 							<div class="card-desc">
-								<span>Chương 5</span>
+								<span>Get/Post Method</span>
 							</div>
 						</div>
 					</a>
@@ -39,7 +39,7 @@
 								<strong>4.1 + 6.2</strong>
 							</div>
 							<div class="card-desc">
-								<span>Chương 4 + 6</span>
+								<span>Survey Application</span>
 							</div>
 						</div>
 					</a>
@@ -50,7 +50,7 @@
 								<strong>5.1 + 6.1 + 8.1</strong>
 							</div>
 							<div class="card-desc">
-								<span>Chương 5 + 6 + 8</span>
+								<span>Email List Application</span>
 							</div>
 						</div>
 					</a>
@@ -61,7 +61,7 @@
 								<strong>7.1 + 7.2 + 9.1</strong>
 							</div>
 							<div class="card-desc">
-								<span>Chương 7 + 9</span>
+								<span>Download Application</span>
 							</div>
 						</div>
 					</a>
@@ -72,7 +72,7 @@
 								<strong>7.3 + 9.2</strong>
 							</div>
 							<div class="card-desc">
-								<span>Chương 7 + 9</span>
+								<span>Cart Application</span>
 							</div>
 						</div>
 					</a>
@@ -82,7 +82,7 @@
 								<strong>Exercise ...</strong>
 							</div>
 							<div class="card-desc">
-								<span>...</span>
+								<span>Coming Soon</span>
 							</div>
 						</div>
 					</a>
