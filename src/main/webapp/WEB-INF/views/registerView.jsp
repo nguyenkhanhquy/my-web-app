@@ -6,13 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Register Page</title>
-	<link rel="stylesheet" href="resources/css/ch07.css" type="text/css"/>
+	<link rel="stylesheet" href="resources/css/ch09.css" type="text/css"/>
 </head>
 <body>
 	<h1>Download registration</h1>
 
-	<p>To register for our downloads, enter your name and email address
-		below. Then, click on the Submit button.</p>
+	<p>To register for our downloads, enter your name and email address below. Then, click on the Register button.</p>
 
 	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 	<form action="download" method="post">
