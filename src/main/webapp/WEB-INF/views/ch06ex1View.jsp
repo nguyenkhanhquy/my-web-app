@@ -22,7 +22,7 @@
     <input type="text" name="lastName" value="${user.lastName}"><br>        
     <label>&nbsp;</label>
     <input class="btn margin_left" type="submit" value="Join Now">
-    <a href="home"><button class="btn margin_left" type="button">Back Home</button></a>
+    <a href="home"><button class="btn" type="button">Back Home</button></a>
 </form>
 
 <%@ include file="includes/footer.jsp" %>

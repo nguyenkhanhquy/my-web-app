@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = { "/ch07ex1_2ch09ex1" })
-public class Ch07ex1_2ch09ex1View extends HttpServlet {
+@WebServlet(urlPatterns = { "/ch09ex1" })
+public class Ch09ex1View extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
@@ -20,7 +20,7 @@ public class Ch07ex1_2ch09ex1View extends HttpServlet {
 		// Forward tới trang /WEB-INF/views/homeView.jsp
 		// (Người dùng không bao giờ truy cập trực tiếp được vào các trang JSP đặt trong
 		// WEB-INF)
-		RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/views/ch07ex1_2ch09ex1View.jsp");
+		RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/views/ch09ex1View.jsp");
 
 		dispatcher.forward(req, resp);
 	}

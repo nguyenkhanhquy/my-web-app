@@ -27,7 +27,7 @@ public class CartServlet extends HttpServlet {
 		resp.setCharacterEncoding("UTF-8");
 		resp.setContentType("text/html; charset=UTF-8");
 
-		String url = "/WEB-INF/views/ch07ex3View.jsp";
+		String url = "/WEB-INF/views/ch09ex2View.jsp";
 		ServletContext sc = getServletContext();
 
 		// get current action
@@ -38,7 +38,7 @@ public class CartServlet extends HttpServlet {
 
 		// perform action and set URL to appropriate page
 		if (action.equals("shop")) {
-			url = "/WEB-INF/views/ch07ex3View.jsp"; // the "index" page
+			url = "/WEB-INF/views/ch09ex2View.jsp"; // the "index" page
 		} else if (action.equals("cart")) {
 			String productCode = req.getParameter("productCode");
 			String quantityString = req.getParameter("quantity");

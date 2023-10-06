@@ -32,9 +32,9 @@ public class DownloadServlet extends HttpServlet {
 		}
 
 		// perform action and set URL to appropriate page
-		String url = "/WEB-INF/views/ch07ex1_2ch09ex1View.jsp";
+		String url = "/WEB-INF/views/ch09ex1View.jsp";
 		if (action.equals("viewAlbums")) {
-			url = "/WEB-INF/views/ch07ex1_2ch09ex1View.jsp";
+			url = "/WEB-INF/views/ch09ex1View.jsp";
 		} else if (action.equals("checkUser")) {
 			url = checkUser(req, resp);
 		} else if (action.equals("viewCookies")) {
@@ -57,7 +57,7 @@ public class DownloadServlet extends HttpServlet {
 		String action = req.getParameter("action");
 
 		// perform action and set URL to appropriate page
-		String url = "/WEB-INF/views/ch07ex1_2ch09ex1View.jsp";
+		String url = "/WEB-INF/views/ch09ex1View.jsp";
 		if (action.equals("registerUser")) {
 			url = registerUser(req, resp);
 		}
@@ -118,36 +118,49 @@ public class DownloadServlet extends HttpServlet {
 		user.setFirstName(firstName);
 		user.setLastName(lastName);
 
-		// write the User object to a file
-		ServletContext sc = getServletContext();
-		String path = sc.getRealPath("/WEB-INF/EmailList.txt");
-		UserIO.add(user, path);
+		String url = "/WEB-INF/views/registerView.jsp";
+		// validate the parameters
+		String message;
+		if (firstName == null || lastName == null || email == null || firstName.isEmpty() || lastName.isEmpty()
+				|| email.isEmpty()) {
+			message = "Please fill out all three text boxes.";
+			url = "/WEB-INF/views/registerView.jsp";
+		} else {
+			message = "";
+			// write the User object to a file
+			ServletContext sc = getServletContext();
+			String path = sc.getRealPath("/WEB-INF/EmailList.txt");
+			UserIO.add(user, path);
 
-		// store the User object as a session attribute
-		HttpSession session = req.getSession();
-		session.setAttribute("user", user);
+			// store the User object as a session attribute
+			HttpSession session = req.getSession();
+			session.setAttribute("user", user);
 
-		// add a cookie that stores the user's email as a cookie
-		Cookie c1 = new Cookie("emailCookie", email);
-		c1.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
-		c1.setPath("/"); // allow entire app to access it
-		resp.addCookie(c1);
+			// add a cookie that stores the user's email as a cookie
+			Cookie c1 = new Cookie("emailCookie", email);
+			c1.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
+			c1.setPath("/"); // allow entire app to access it
+			resp.addCookie(c1);
 
-		// add a cookie that stores the user's as a cookie
-		Cookie c2 = new Cookie("firstNameCookie", firstName);
-		c2.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
-		c2.setPath("/"); // allow entire app to access it
-		resp.addCookie(c2);
+			// add a cookie that stores the user's as a cookie
+			Cookie c2 = new Cookie("firstNameCookie", firstName);
+			c2.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
+			c2.setPath("/"); // allow entire app to access it
+			resp.addCookie(c2);
 
-		// create and return a URL for the appropriate Download page
-		Product product = (Product) session.getAttribute("product");
-		String url = "/WEB-INF/views/" + product.getCode() + "_downloadView.jsp";
+			// create and return a URL for the appropriate Download page
+			Product product = (Product) session.getAttribute("product");
+			url = "/WEB-INF/views/" + product.getCode() + "_downloadView.jsp";
+		}
+		req.setAttribute("user", user);
+		req.setAttribute("message", message);
 		return url;
 	}
 
 	private String deleteCookies(HttpServletRequest req, HttpServletResponse resp) {
 
 		HttpSession session = req.getSession();
+		// session.invalidate();
 		session.removeAttribute("user");
 
 		Cookie[] cookies = req.getCookies();
