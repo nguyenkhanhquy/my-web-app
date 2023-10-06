@@ -21,8 +21,8 @@
     <label class="pad_top">Last Name:</label>
     <input type="text" name="lastName" value="${user.lastName}"><br>        
     <label>&nbsp;</label>
-    <input type="submit" value="Join Now" class="margin_left">
-    <a href="home"><button class="margin_left" type="button">Back Home</button></a>
+    <input class="btn margin_left" type="submit" value="Join Now">
+    <a href="home"><button class="btn margin_left" type="button">Back Home</button></a>
 </form>
 
 <%@ include file="includes/footer.jsp" %>

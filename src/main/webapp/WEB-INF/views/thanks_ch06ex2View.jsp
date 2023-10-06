@@ -19,6 +19,8 @@
     <span>${user.firstName}</span><br>
     <label>Last Name:</label>
     <span>${user.lastName}</span><br>
+    <label>Date of Birth:</label>
+	<span>${user.dOB}</span><br>
     <label>Heard From:</label>
     <span>${user.heardFrom}</span><br>
     <label>Like that:</label>

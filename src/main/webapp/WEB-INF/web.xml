@@ -5,6 +5,13 @@
 	id="WebApp_ID" version="4.0">
 	<display-name>MyWebApp</display-name>
 
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<scripting-invalid>true</scripting-invalid>
+		</jsp-property-group>
+	</jsp-config>
+	
 	<context-param>
 		<param-name>custServEmail</param-name>
 		<param-value>custserv@murach.com</param-value>

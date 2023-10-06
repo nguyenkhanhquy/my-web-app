@@ -2,10 +2,9 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 85%;
 	margin-left: 2em;
 	margin-right: 2em;
-	width: 400px;
+	width: 520px;
 	background-color: #eee;
 }
 
@@ -29,8 +28,9 @@ label {
 }
 
 input[type="text"],
-input[type="email"] {
-	width: 15em;
+input[type="email"],
+input[type="date"] {
+	width: 20em;
 	margin-left: 0.5em;
 	margin-bottom: 0.5em;
 }
@@ -58,6 +58,6 @@ br {
 
 .btn {
 	cursor: pointer;
-	min-width: 8em;
-	height: 3em;
+	min-width: 7.5em;
+	height: 2.75em;
 }

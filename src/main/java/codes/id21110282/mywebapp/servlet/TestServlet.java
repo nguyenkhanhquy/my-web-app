@@ -21,6 +21,7 @@ public class TestServlet extends HttpServlet {
 		PrintWriter out = resp.getWriter();
 		try {
 			out.println("<h1>TestServlet Post</h1>");
+			out.println("<p>To continue, click the Back button in your browser.</p>");
 		} finally {
 			out.close();
 		}
@@ -33,6 +34,7 @@ public class TestServlet extends HttpServlet {
 		PrintWriter out = resp.getWriter();
 		try {
 			out.println("<h1>TestServlet Get</h1>");
+			out.println("<p>To continue, click the Back button in your browser.</p>");
 		} finally {
 			out.close();
 		}

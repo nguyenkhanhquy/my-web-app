@@ -23,7 +23,7 @@
 		<label class="pad_top">Last Name:</label> 
 		<input type="text" name="lastName" value="${user.lastName}"><br> 
 		<label>&nbsp;
-		</label><input type="submit" value="Register" class="margin_left">
+		</label><input class="btn margin_left" type="submit" value="Register">
 	</form>
 </body>
 </html>

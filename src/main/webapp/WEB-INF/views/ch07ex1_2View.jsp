@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 7.1 Page</title>
+    <title>Exercise 7.1 + 7.2 Page</title>
     <link rel="stylesheet" href="resources/css/ch07.css" type="text/css"/>
 </head>
 <body>
@@ -29,8 +29,8 @@
 	    Joe Rut - Genuine Wood Grained Finish
 	</a>
 	</p>
-	
-	<a href="home"><button type="button">Back Home</button></a>
+
+	<a href="home"><button class="btn" type="button">Back Home</button></a>
 
 </body>
 </html>

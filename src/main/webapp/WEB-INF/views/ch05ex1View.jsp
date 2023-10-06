@@ -10,8 +10,7 @@
 </head>
 <body>
 	<h1>Join our email list</h1>
-    <p>To join our email list, enter your name and
-       email address below.</p>
+    <p>To join our email list, enter your name and email address below.</p>
     <p class="mess"><i>${message}</i></p>
     
     <form action="emailList" method="post">

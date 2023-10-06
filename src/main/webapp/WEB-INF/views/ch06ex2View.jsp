@@ -24,6 +24,8 @@
         <input type="text" name="lastName" required><br>
         <label class="pad_top">Email</label>
         <input type="email" name="email" required><br>
+        <label class="pad_top">Date of Birth</label>
+		<input type="date" name="dOB" required><br>
 
         <h2>How did you hear about us?</h2>
         <p><input type="radio" name="heardFrom" value="Search Engine" required>Search engine

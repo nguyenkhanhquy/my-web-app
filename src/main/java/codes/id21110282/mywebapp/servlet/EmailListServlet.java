@@ -1,7 +1,9 @@
 package codes.id21110282.mywebapp.servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 import javax.servlet.ServletException;
@@ -10,8 +12,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import codes.id21110282.mywebapp.bean.User;
+import codes.id21110282.mywebapp.dao.UserIO;
 
 @WebServlet(name = "EmailListServlet", urlPatterns = { "/emailList" }, initParams = {
 		@WebInitParam(name = "relativePathToFile", value = "/WEB-INF/EmailList.txt") })
@@ -25,6 +29,8 @@ public class EmailListServlet extends HttpServlet {
 		req.setCharacterEncoding("UTF-8");
 		resp.setCharacterEncoding("UTF-8");
 		resp.setContentType("text/html; charset=UTF-8");
+
+		HttpSession session = req.getSession();
 
 		String myExercise = req.getParameter("myExercise");
 
@@ -67,11 +73,24 @@ public class EmailListServlet extends HttpServlet {
 				url = "/WEB-INF/views/" + myExercise + ".jsp";
 			} else {
 				message = "";
+				session.setAttribute("user", user);
 				url = "/WEB-INF/views/thanks_" + myExercise + ".jsp";
 			}
 			req.setAttribute("user", user);
 			req.setAttribute("message", message);
 		}
+
+		// create the Date object and store it in the request
+		Date currentDateJoin = new Date();
+		req.setAttribute("currentDate", currentDateJoin);
+
+		// create users list and store it in the session
+		//String path = getServletContext().getRealPath("/WEB-INF/EmailList.txt");
+		String path = getServletContext().getRealPath(getInitParameter("relativePathToFile"));
+		ArrayList<User> users = UserIO.getUsers(path);
+		session.setAttribute("users", users);
+
+		// forward request and response objects to specified URL
 		getServletContext().getRequestDispatcher(url).forward(req, resp);
 	}
 

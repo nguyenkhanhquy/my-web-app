@@ -18,7 +18,7 @@ below.</p>
 <form action="" method="post">
     <input type="hidden" name="action" value="join">
     <input type="hidden" name="myExercise" value="ch06ex1View">
-    <input type="submit" value="Return">
+    <input class="btn" type="submit" value="Return">
 </form>
 
 <c:import url="includes/footer.jsp" />
