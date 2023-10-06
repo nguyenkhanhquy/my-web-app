@@ -5,12 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 7.1 + 7.2 Page</title>
-    <link rel="stylesheet" href="resources/css/ch07.css" type="text/css"/>
+    <title>Exercise 7.1 + 7.2 + 9.1 Page</title>
+    <link rel="stylesheet" href="resources/css/ch09.css" type="text/css"/>
 </head>
 <body>
 	<h1>List of albums</h1>
-	<p>User Email: ${cookie.userEmail.value}</p>
+	<%-- <p>User Email: ${cookie.userEmail.value}</p> --%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	<c:if test="${cookie.firstNameCookie.value != null}">
+	    <p>Welcome back, <c:out value='${cookie.firstNameCookie.value}'/></p>
+	</c:if>
 	
 	<p>
 	<a href="download?action=checkUser&amp;productCode=8601">

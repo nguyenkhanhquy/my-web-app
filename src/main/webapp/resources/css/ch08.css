@@ -4,7 +4,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin-left: 2em;
 	margin-right: 2em;
-	width: 560px;
+	width: 580px;
 	background-color: #eee;
 }
 
@@ -43,6 +43,10 @@ br {
 
 .margin_left {
 	margin-left: 0.5em;
+}
+
+.mess {
+	color: red;
 }
 
 .btn {

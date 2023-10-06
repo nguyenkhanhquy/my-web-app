@@ -17,7 +17,7 @@ body {
 
 .course-name {
 	color: teal;
-	margin-top: 36px;
+	margin-top: 28px;
 	margin-bottom: 20px;
 	text-align: center;
 	font-size: 24pt;
@@ -52,7 +52,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	max-width: 704px;
+	max-width: 552px;
 }
 
 .img-avatar {
@@ -100,8 +100,8 @@ a {
 	background-color: #0d8fdb;
 	border-top-right-radius: 8px;
 	border-top-left-radius: 8px;
-	height: 160px;
-	min-width: 160px;
+	height: 120px;
+	min-width: 168px;
 	color: #fff;
 	transition: 0.5s;
 }
@@ -117,7 +117,6 @@ a {
 .footer {
 	display: flex;
 	justify-content: center;
-	min-height: 100px;
 }
 
 .social-icon {
@@ -164,7 +163,7 @@ a {
 		position: absolute;
 		z-index: -1;
 		bottom: calc(100% - 26px);
-		min-width: 160px;
+		min-width: 168px;
 		box-sizing: border-box;
 		padding: 4px 6px;
 		border-top-left-radius: 8px;

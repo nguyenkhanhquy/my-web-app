@@ -9,6 +9,7 @@ import java.util.GregorianCalendar;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -73,7 +74,21 @@ public class EmailListServlet extends HttpServlet {
 				url = "/WEB-INF/views/" + myExercise + ".jsp";
 			} else {
 				message = "";
-				session.setAttribute("user", user);
+				if (myExercise.equals("ch08ex1View")) {
+					// store the User object as a session attribute
+					session.setAttribute("user", user);
+					// add a cookie that stores the user's email as a cookie
+					Cookie c1 = new Cookie("emailCookie", email);
+					c1.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
+					c1.setPath("/"); // allow entire app to access it
+					resp.addCookie(c1);
+
+					// add a cookie that stores the user's as a cookie
+					Cookie c2 = new Cookie("firstNameCookie", firstName);
+					c2.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
+					c2.setPath("/"); // allow entire app to access it
+					resp.addCookie(c2);
+				}
 				url = "/WEB-INF/views/thanks_" + myExercise + ".jsp";
 			}
 			req.setAttribute("user", user);
@@ -85,7 +100,7 @@ public class EmailListServlet extends HttpServlet {
 		req.setAttribute("currentDate", currentDateJoin);
 
 		// create users list and store it in the session
-		//String path = getServletContext().getRealPath("/WEB-INF/EmailList.txt");
+		// String path = getServletContext().getRealPath("/WEB-INF/EmailList.txt");
 		String path = getServletContext().getRealPath(getInitParameter("relativePathToFile"));
 		ArrayList<User> users = UserIO.getUsers(path);
 		session.setAttribute("users", users);

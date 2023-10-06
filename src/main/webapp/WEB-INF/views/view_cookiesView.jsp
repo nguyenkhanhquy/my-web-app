@@ -22,8 +22,8 @@
 	  </tr>
 	  <c:forEach var="c" items="${cookie}">      
 	  <tr>
-	    <td>${c.value.name}</td>
-	    <td>${c.value.value}</td>
+	    <td>${c.value.name}</td> <!-- EL -->
+	    <td><c:out value='${c.value.value}'/></td>  <!-- JSTL -->
 	  </tr>
 	  </c:forEach>  
 	</table>

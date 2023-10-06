@@ -14,6 +14,7 @@
 	<p>To register for our downloads, enter your name and email address
 		below. Then, click on the Submit button.</p>
 
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 	<form action="download" method="post">
 		<input type="hidden" name="action" value="registerUser"> 
 		<label class="pad_top">Email:</label> 

@@ -32,9 +32,9 @@ public class DownloadServlet extends HttpServlet {
 		}
 
 		// perform action and set URL to appropriate page
-		String url = "/WEB-INF/views/ch07ex1_2View.jsp";
+		String url = "/WEB-INF/views/ch07ex1_2ch09ex1View.jsp";
 		if (action.equals("viewAlbums")) {
-			url = "/WEB-INF/views/ch07ex1_2View.jsp";
+			url = "/WEB-INF/views/ch07ex1_2ch09ex1View.jsp";
 		} else if (action.equals("checkUser")) {
 			url = checkUser(req, resp);
 		} else if (action.equals("viewCookies")) {
@@ -57,7 +57,7 @@ public class DownloadServlet extends HttpServlet {
 		String action = req.getParameter("action");
 
 		// perform action and set URL to appropriate page
-		String url = "/WEB-INF/views/ch07ex1_2View.jsp";
+		String url = "/WEB-INF/views/ch07ex1_2ch09ex1View.jsp";
 		if (action.equals("registerUser")) {
 			url = registerUser(req, resp);
 		}
@@ -127,11 +127,17 @@ public class DownloadServlet extends HttpServlet {
 		HttpSession session = req.getSession();
 		session.setAttribute("user", user);
 
-		// add a cookie that stores the user's email to browser
-		Cookie c = new Cookie("userEmail", email);
-		c.setMaxAge(60 * 60 * 24 * 365 * 3); // set age to 3 years
-		c.setPath("/"); // allow entire app to access it
-		resp.addCookie(c);
+		// add a cookie that stores the user's email as a cookie
+		Cookie c1 = new Cookie("emailCookie", email);
+		c1.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
+		c1.setPath("/"); // allow entire app to access it
+		resp.addCookie(c1);
+
+		// add a cookie that stores the user's as a cookie
+		Cookie c2 = new Cookie("firstNameCookie", firstName);
+		c2.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
+		c2.setPath("/"); // allow entire app to access it
+		resp.addCookie(c2);
 
 		// create and return a URL for the appropriate Download page
 		Product product = (Product) session.getAttribute("product");
@@ -140,6 +146,9 @@ public class DownloadServlet extends HttpServlet {
 	}
 
 	private String deleteCookies(HttpServletRequest req, HttpServletResponse resp) {
+
+		HttpSession session = req.getSession();
+		session.removeAttribute("user");
 
 		Cookie[] cookies = req.getCookies();
 		for (Cookie cookie : cookies) {

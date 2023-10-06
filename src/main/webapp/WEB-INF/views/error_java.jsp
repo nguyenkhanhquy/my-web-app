@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Java Error Page</title>
-<link rel="stylesheet" href="resources/css/error.css" type="text/css" />
 </head>
 <body>
 
@@ -16,8 +15,6 @@
 	<h2>Details</h2>
 	<p>Type: ${pageContext.exception["class"]}</p>
 	<p>Message: ${pageContext.exception.message}</p>
-	
-	<!-- <img src="resources/img/error_java.svg" alt="Error Java"> -->
 
 </body>
 </html>
