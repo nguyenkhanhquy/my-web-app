@@ -38,5 +38,4 @@
         <input class="btn" type="submit" value="Return">
     </form>
     
-</body>
-</html>
+<%@ include file="includes/footer.jsp" %>

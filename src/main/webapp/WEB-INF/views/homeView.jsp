@@ -25,7 +25,8 @@
 					<a href="ch05ex2">
 						<div class="card ability-card">
 							<div class="card-exercise">
-								<strong>Exercise 5.2</strong>
+								<strong style="margin-bottom: 8px;">Exercise</strong>
+								<strong>5.2</strong>
 							</div>
 							<div class="card-desc">
 								<span>Get/Post Method</span>

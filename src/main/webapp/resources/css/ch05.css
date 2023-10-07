@@ -58,5 +58,5 @@ br {
 .btn {
 	cursor: pointer;
 	min-width: 7.5em;
-	height: 2.75em;
+    height: 2.5em;
 }

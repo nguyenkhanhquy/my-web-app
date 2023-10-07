@@ -4,7 +4,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin-left: 2em;
 	margin-right: 2em;
-	width: 580px;
+	width: 600px;
 	background-color: #eee;
 }
 
@@ -52,5 +52,5 @@ br {
 .btn {
 	cursor: pointer;
 	min-width: 7.5em;
-	height: 2.75em;
+	height: 2.5em;
 }

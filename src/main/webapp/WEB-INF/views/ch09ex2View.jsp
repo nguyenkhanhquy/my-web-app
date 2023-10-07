@@ -21,16 +21,24 @@
 	    <tr>
 	        <td><c:out value='${product.description}'/></td>
 	        <td class="right">${product.priceCurrencyFormat}</td>
-	        <td><form action="cart" method="post">
+	        <td>
+	        	<form action="cart" method="post">
 	                <input type="hidden" name="productCode" value="<c:out value='${product.code}'/>">
-	                <input type="submit" value="Add To Cart">
-	            </form></td>
+	                <input class="btn" type="submit" value="Add To Cart">
+	            </form>
+            </td>
 	    </tr>
 	    </c:forEach>
 	</table>
 	
 	<br>
-	<a href="home"><button class="btn" type="button">Back Home</button></a>
+	<form action="cart" method="post">
+		<input type="hidden" name="action" value="cartview">
+		<input class="btn margin_bottom" type="submit" value="Your Cart">
+	</form>
+	<form action="home" method="post">
+		<input class="btn" type="submit" value="Back Home">
+	</form>
 	
 </body>
 </html>

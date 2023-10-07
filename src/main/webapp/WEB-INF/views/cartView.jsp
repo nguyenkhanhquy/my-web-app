@@ -25,11 +25,9 @@
 	  <tr>
 	    <td>
 	      <form action="" method="post">
-	        <input type="hidden" name="productCode" 
-	               value="<c:out value='${item.product.code}'/>">
-	        <input type=text name="quantity" 
-	               value="<c:out value='${item.quantity}'/>" id="quantity">
-	        <input type="submit" value="Update">
+	        <input type="hidden" name="productCode" value="<c:out value='${item.product.code}'/>">
+	        <input type=text name="quantity" value="<c:out value='${item.quantity}'/>" id="quantity">
+	        <input class="btn" type="submit" value="Update">
 	      </form>
 	    </td>
 	    <td><c:out value='${item.product.description}'/></td>
@@ -37,11 +35,9 @@
 	    <td>${item.totalCurrencyFormat}</td>
 	    <td>
 	      <form action="" method="post">
-	        <input type="hidden" name="productCode" 
-	               value="<c:out value='${item.product.code}'/>">
-	        <input type="hidden" name="quantity" 
-	               value="0">
-	        <input type="submit" value="Remove Item">
+	        <input type="hidden" name="productCode" value="<c:out value='${item.product.code}'/>">
+	        <input type="hidden" name="quantity" value="0">
+	        <input class="btn" type="submit" value="Remove Item">
 	      </form>
 	    </td>
 	  </tr>
