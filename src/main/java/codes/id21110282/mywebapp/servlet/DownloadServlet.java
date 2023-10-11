@@ -160,8 +160,8 @@ public class DownloadServlet extends HttpServlet {
 	private String deleteCookies(HttpServletRequest req, HttpServletResponse resp) {
 
 		HttpSession session = req.getSession();
-		// session.invalidate();
-		session.removeAttribute("user");
+		session.invalidate();
+//		session.removeAttribute("user");
 
 		Cookie[] cookies = req.getCookies();
 		for (Cookie cookie : cookies) {

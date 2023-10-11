@@ -46,7 +46,7 @@
         </p>
 
         <input class="btn" type="submit" value="Submit">
-        <a href="home"><button class="btn" type="button">Back Home</button></a>
+        <a href="home#exercise"><button class="btn" type="button">Back Home</button></a>
     </form>
 </body>
 </html>

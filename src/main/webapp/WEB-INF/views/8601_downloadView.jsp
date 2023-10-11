@@ -20,11 +20,11 @@
 	</tr>
 	<tr>
 	    <td>You Are a Star</td>
-	    <td><a href="musicStore/sound/${product.code}/Seishun_Complex.ogg">MP3 (OGG)</a></td>
+	    <td><audio src="musicStore/sound/${product.code}/star.mp3" controls preload="none"></audio></td>
 	</tr>
 	<tr>
 	    <td>Don't Make No Difference</td>
-	    <td><a href="musicStore/sound/${product.code}/no_difference.mp3">MP3</a></td>
+	    <td><audio src="musicStore/sound/${product.code}/no_difference.mp3" controls preload="none"></audio></td>
 	</tr>
 	</table>
 	

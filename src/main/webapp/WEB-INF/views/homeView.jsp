@@ -80,7 +80,8 @@
 					<a>
 						<div class="card empty-card">
 							<div class="card-exercise">
-								<strong>Exercise ...</strong>
+								<strong style="margin-bottom: 8px;">Exercise</strong>
+								<strong>...</strong>
 							</div>
 							<div class="card-desc">
 								<span>Coming Soon</span>

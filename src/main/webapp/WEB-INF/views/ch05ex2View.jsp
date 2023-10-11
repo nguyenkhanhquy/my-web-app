@@ -19,7 +19,7 @@
         <input type="hidden" name="action" value="add">
         <p>2. Click the <strong>Post Method</strong> button to run the test servlet. This should show that the test servlet works for the HTTP <strong>POST</strong> method.</p>
         <input class="btn" type="submit" value="Post Method">
-        <a href="home"><button class="btn" type="button">Back Home</button></a>
+        <a href="home#exercise"><button class="btn" type="button">Back Home</button></a>
     </form>
     
 </body>

@@ -21,7 +21,7 @@
 	</tr>
 	<tr>
 	    <td>Filter</td>
-	    <td><a href="musicStore/sound/${product.code}/filter.mp3">MP3</a></td>
+	    <td><audio src="musicStore/sound/${product.code}/filter.mp3" controls preload="none"></audio>
 	</tr>
 	<tr>
 	    <td>So Long Lazy Ray</td>

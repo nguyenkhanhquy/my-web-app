@@ -36,7 +36,7 @@
 		<input type="hidden" name="action" value="cartview">
 		<input class="btn margin_bottom" type="submit" value="Your Cart">
 	</form>
-	<form action="home" method="post">
+	<form action="home#exercise" method="post">
 		<input class="btn" type="submit" value="Back Home">
 	</form>
 	
