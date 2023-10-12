@@ -25,7 +25,7 @@
 	</tr>
 	<tr>
 	    <td>So Long Lazy Ray</td>
-	    <td><a href="musicStore/sound/${product.code}/so_long.mp3">MP3</a></td>
+	    <td><audio src="musicStore/sound/${product.code}/so_long.mp3" controls preload="none"></audio>
 	</tr>
 	</table>
 	

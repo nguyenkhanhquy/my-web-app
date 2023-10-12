@@ -21,11 +21,11 @@
 	</tr>
 	<tr>
 	    <td>Neon Lights</td>
-	    <td><a href="musicStore/sound/${product.code}/neon.mp3">MP3</a></td>
+	    <td><audio src="musicStore/sound/${product.code}/neon.mp3" controls preload="none"></audio>
 	</tr>
 	<tr>
 	    <td>Tank Hill</td>
-	    <td><a href="musicStore/sound/${product.code}/tank.mp3">MP3</a></td>
+	    <td><audio src="musicStore/sound/${product.code}/tank.mp3" controls preload="none"></audio>
 	</tr>
 	</table>
 	
