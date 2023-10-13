@@ -289,23 +289,27 @@ header ul li:hover a {
 }
 
 .listProject .btns button {
-    background-image: var(--gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 1em;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
-    width: 60px;
+    width: 120px;
     border: none;
     box-shadow: var(--box-shadow);
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .listProject .btns button:hover {
-    width: 120px;
+	background-image: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 160px;
+}
+
+.listProject .btns span {
+    font-size: 0.7em;
 }
 
 .listProject .evaluate {
