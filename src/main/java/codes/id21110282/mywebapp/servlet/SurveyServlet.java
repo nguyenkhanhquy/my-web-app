@@ -21,7 +21,7 @@ public class SurveyServlet extends HttpServlet {
 		req.setCharacterEncoding("UTF-8");
 		resp.setCharacterEncoding("UTF-8");
 		resp.setContentType("text/html; charset=UTF-8");
-		
+
 		String myExercise = req.getParameter("myExercise");
 
 		String url = "/WEB-INF/views/" + myExercise + ".jsp";

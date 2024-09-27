@@ -28,7 +28,7 @@ public class CartServlet extends HttpServlet {
 		resp.setContentType("text/html; charset=UTF-8");
 
 		String url = "/WEB-INF/views/ch09ex2View.jsp";
-		
+
 		ServletContext sc = getServletContext();
 
 		// get current action
@@ -47,8 +47,8 @@ public class CartServlet extends HttpServlet {
 			HttpSession session = req.getSession();
 			Cart cart;
 			final Object lock = req.getSession().getId().intern();
-			synchronized(lock) {
-			    cart = (Cart) session.getAttribute("cart");
+			synchronized (lock) {
+				cart = (Cart) session.getAttribute("cart");
 			}
 //			Cart cart = (Cart) session.getAttribute("cart");
 			if (cart == null) {
@@ -79,8 +79,8 @@ public class CartServlet extends HttpServlet {
 				cart.removeItem(lineItem);
 			}
 
-			synchronized(lock) {
-			    session.setAttribute("cart", cart);
+			synchronized (lock) {
+				session.setAttribute("cart", cart);
 			}
 //			session.setAttribute("cart", cart);
 			url = "/WEB-INF/views/cartView.jsp";
