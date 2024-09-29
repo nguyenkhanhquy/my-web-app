@@ -6,12 +6,12 @@ import java.text.NumberFormat;
 public class LineItem implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	private Product product;
 	private int quantity;
 
 	public LineItem() {
-		
+
 	}
 
 	public void setProduct(Product p) {
